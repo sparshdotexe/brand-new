@@ -1,0 +1,35 @@
+[mgr]
+  ratio = [ 2, 3, 10 ]
+
+[opener]
+edit = [
+  { run = 'nvim "$@"', block = true }
+]
+
+image = [
+  { run = 'gthumb "$@"', block = false }
+]
+
+pdf = [
+  { run = 'zen-browser "$@"', block = false }
+]
+
+video = [
+  { run = 'celluloid "$@"', block = false }
+]
+
+audio = [
+  { run = 'celluloid "$@"', block = false }
+]
+
+[open]
+rules = [
+  { mime = "application/json", use = "edit" },
+  { mime = "application/jsonc", use = "edit" },
+  { mime = "text/*", use = "edit" },
+  { mime = "image/*", use = "image" },
+  { mime = "video/*", use = "video" },
+  { mime = "audio/*", use = "audio" },
+  { mime = "application/pdf", use = "pdf" }
+]
+
