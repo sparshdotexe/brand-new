@@ -7,7 +7,7 @@ edit = [
 ]
 
 image = [
-  { run = 'gthumb "$@"', block = false }
+  { run = 'zen-browser "$@"', block = false }
 ]
 
 pdf = [
