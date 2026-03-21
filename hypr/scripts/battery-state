@@ -1,0 +1,12 @@
+#!/bin/bash
+
+status=$(cat /sys/class/power_supply/BAT0/status)
+battery=$(cat /sys/class/power_supply/BAT0/capacity)
+
+if [[ $status == "Charging" ]]; then
+  notify-send "$battery" "↑"
+elif [[ $status == "Not charging" ]]; then
+  notify-send "$battery" "❄️"
+else
+  notify-send "$battery" "↓"
+fi
