@@ -1,4 +1,0 @@
-#!/bin/bash
-
-read -p "duration: " time
-tclock -c DarkGray -s 3 timer -MP -d $time -e paplay ~/localsend/audiomass-output.wav
