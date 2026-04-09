@@ -1,6 +1,8 @@
-font-family = "Fira Code"
+font-family = "Cascadia Code"
+#font-family = "Fira Code"
+#font-family = "JetBrainsMono Nerd Font"
 
-font-size = 9
+font-size = 10
 
 background = #000000
 background-opacity = 0.1
